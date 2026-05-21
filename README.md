@@ -18,10 +18,9 @@
 
 ## Overview
 
-This project develops a Convolutional Neural Network (CNN) capable of detecting pneumonia from chest X-ray images while simultaneously providing visual explanations of its predictions through Grad-CAM heatmaps. Although many deep learning models achieve strong classification performance in medical imaging tasks, they often behave as black boxes, limiting their adoption in clinical environments where interpretability and trust are essential.
+This project develops a Convolutional Neural Network (CNN) for detecting pneumonia from chest X-ray images, while also providing visual explanations of its predictions through Grad-CAM heatmaps. Although deep learning models have achieved strong performance in medical imaging tasks, they are often treated as black boxes, which limits their adoption in clinical settings where interpretability and trust are essential.
 
-Our contribution focuses not only on predictive performance, but also on explainability
-> “We don’t just want a model that is correct — we want one that doctors can trust.”
+The proposed approach is based on the methodology presented in **[*Pneumonia Detection Using CNN-based Feature Extraction*](https://ieeexplore.ieee.org/document/8869364)**, which demonstrates the effectiveness of convolutional architectures for automated pneumonia classification. This work further extends the focus to model interpretability, aiming to improve transparency and support clinical decision-making.
 
 Using the publicly available **[Chest X-Ray Pneumonia Dataset (Kaggle)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)**, we implemented a full deep learning pipeline in Python that includes image preprocessing, exploratory data analysis, CNN training and evaluation, and explainability via Gradient-weighted Class Activation Mapping (Grad-CAM). The resulting heatmaps allow clinicians to visually inspect which lung regions most influenced the model’s decision, helping bridge the gap between artificial intelligence and clinical interpretability.
 
