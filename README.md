@@ -1,5 +1,5 @@
 # Explainable CNN for Pneumonia Detection from Chest X-Rays
-> A machine learning project developed for the Machine Learning course at the Universitat Politècnica de Barcelona (UPC), Bsc Bioinformatics (May 2026)
+> A machine learning project developed as part of the Machine Learning course at the Universitat Politècnica de Barcelona (UPC), Bachelor of Science (BSc) in Bioinformatics, May 2026.
 
 **Authors:** 
 * [Òscar Contreras](https://github.com/ocontrerasparejo)
