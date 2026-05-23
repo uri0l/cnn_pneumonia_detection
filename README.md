@@ -125,6 +125,8 @@ Training uses weighted BCE loss (to address class imbalance), Adam optimizer, Co
 │   ├── training_curves_p2.png
 │   ├── confusion_matrix.png
 │   ├── roc_curve.png
+|   ├── tsne_projection.png        ← t-SNE
+│   └── umap_projection.png        ← UMAP (already saved, just rename)
 │   ├── precision_recall_curve.png
 │   ├── operating_point_analysis.png
 │   ├── gradcam_correct.png
