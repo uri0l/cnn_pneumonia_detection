@@ -121,17 +121,25 @@ Training uses weighted BCE loss (to address class imbalance), Adam optimizer, Co
 ├── checkpoints/
 │   └── pneumonia_resnet50.pth                               # Saved model weights (phase 2)
 ├── plots/
-│   ├── training_curves_p1.png
-│   ├── training_curves_p2.png
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-|   ├── tsne_projection.png        ← t-SNE
-│   └── umap_projection.png        ← UMAP (already saved, just rename)
-│   ├── precision_recall_curve.png
+│   ├── baseline_vs_resnet50_roc.png
+│   ├── confusion_matrix_and_roc.png
+│   ├── eda_brightness_scatter.png
+│   ├── eda_class_distribution.png
+│   ├── eda_intensity_distributions.png
+│   ├── eda_mean_images.png
+│   ├── eda_sample_images.png
+│   ├── eda_variance_maps.png
+│   ├── gradcam_grad-cam__correct_normal_detections_tn.png
+│   ├── gradcam_grad-cam__correct_pneumonia_detections_tp.png
+│   ├── gradcam_grad-cam__correct_predictions_top_x-ray,_bottom_heatmap.png
+│   ├── gradcam_grad-cam__false_negatives_pneumonia_missed__all_cases.png
+│   ├── gradcam_grad-cam__false_positives_normal_predicted_as_pneumonia.png
+│   ├── gradcam_grad-cam__incorrect_predictions.png
 │   ├── operating_point_analysis.png
-│   ├── gradcam_correct.png
-│   ├── gradcam_errors.png
-│   └── baseline_comparison.png
+│   ├── training_phase_1__head_training_backbone_frozen.png
+│   ├── training_phase_2__full_fine-tuning.png
+│   ├── tsne_projection.png
+│   └── umap_projection.png
 └── README.md
 ```
  
@@ -160,15 +168,15 @@ Training is ~10× faster on GPU. Enable via **Runtime → Change runtime type �
 3. Download the dataset following Option A or Option B in Section 2.1 of the notebook.
 4. Run all cells in order. The model checkpoint is saved to `checkpoints/pneumonia_resnet50.pth`.
 
-<!--
-### Streamlit App (inference)
+
+### Streamlit App
  
 ```bash
 streamlit run app.py
 ```
  
 Upload any chest X-ray image to get a classification prediction, confidence score, and Grad-CAM heatmap overlay.
---> 
+
 ---
  
 ## Reference
