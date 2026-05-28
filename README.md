@@ -14,6 +14,8 @@
 [![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![ResNet50](https://img.shields.io/badge/Model-ResNet50-009688?style=flat&logoColor=white)](https://arxiv.org/abs/1512.03385)
 
+<img width="1302" height="433" alt="gradcam_correct_predictions" src="https://github.com/user-attachments/assets/43199455-5ee7-4e06-aaf4-244224235405" />
+
 ---
 
 ## Overview
@@ -23,6 +25,9 @@ This project develops a Convolutional Neural Network (CNN) for detecting pneumon
 The proposed approach is based on the methodology presented in **[*Pneumonia Detection Using CNN-based Feature Extraction*](https://ieeexplore.ieee.org/document/8869364)**, which demonstrates the effectiveness of convolutional architectures for automated pneumonia classification. This work further extends the focus to model interpretability, aiming to improve transparency and support clinical decision-making.
 
 Using the publicly available **[Chest X-Ray Pneumonia Dataset (Kaggle)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)**, we implemented a full deep learning pipeline in Python that includes image preprocessing, exploratory data analysis, CNN training and evaluation, and explainability via Gradient-weighted Class Activation Mapping (Grad-CAM). The resulting heatmaps allow clinicians to visually inspect which lung regions most influenced the model’s decision, helping bridge the gap between artificial intelligence and clinical interpretability.
+
+
+
 
 ## Goals
 ### General Goal
