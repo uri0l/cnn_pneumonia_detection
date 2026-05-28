@@ -121,10 +121,10 @@ Training uses weighted BCE loss (to address class imbalance), Adam optimizer, Co
  
 ```
 .
-├── MODEL3__FINAL___new_split_new_transform_with_EDA.ipynb   # Full annotated pipeline
+├── MODEL3_FINAL.ipynb                                        # Full annotated pipeline
 ├── app.py                                                    # Streamlit inference app
 ├── checkpoints/
-│   └── pneumonia_resnet50.pth                               # Saved model weights (phase 2)
+│   └── pneumonia_resnet50.pth                                # Saved model weights (phase 2)
 ├── plots/
 │   ├── baseline_vs_resnet50_roc.png
 │   ├── confusion_matrix_and_roc.png
@@ -168,7 +168,7 @@ Training is ~10× faster on GPU. Enable via **Runtime → Change runtime type �
  
 ### Notebook (training + evaluation)
  
-1. Open `MODEL3__FINAL___new_split_new_transform_with_EDA.ipynb` in Google Colab.
+1. Open `MODEL3_FINAL.ipynb` in Google Colab.
 2. Enable GPU: **Runtime → Change runtime type → T4 GPU → Save**.
 3. Download the dataset following Option A or Option B in Section 2.1 of the notebook.
 4. Run all cells in order. The model checkpoint is saved to `checkpoints/pneumonia_resnet50.pth`.
